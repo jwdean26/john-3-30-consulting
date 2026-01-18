@@ -1,0 +1,156 @@
+/* Base styles */
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f4f4f7;
+  --color-text: #111111;
+  --color-accent: #004b8d;
+  --color-accent-dark: #003463;
+  --color-focus: #ffbf47;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* Skip link */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-accent);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Layout */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header and navigation */
+
+.site-header {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.site-tagline {
+  margin: 0.25rem 0 1rem;
+  font-size: 1rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration: underline;
+}
+
+/* Sections */
+
+.section {
+  padding: 2rem 0;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* Service blocks */
+
+.service-block {
+  margin-bottom: 1.5rem;
+}
+
+.service-block h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+
+.site-footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Links and focus styles */
+
+a {
+  color: var(--color-accent-dark);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Ensure clear focus for keyboard users */
+
+a:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 600px) {
+  .site-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
