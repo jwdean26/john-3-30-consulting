@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About the Owner – John 3:30 Consulting, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about John Dean, owner of John 3:30 Consulting, LLC, and his decades of experience in Assistive Technology.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">John 3:30 Consulting, LLC</h1>
+      <p class="site-tagline">Empowering people through accessible technology</p>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="about-owner.html" aria-current="page">About the Owner</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section-alt">
+      <div class="container">
+        <h2>About the Owner</h2>
+
+        <!-- Accessible Photo -->
+        <figure class="owner-photo">
+          <img src="images/john-dean.jpg"
+               alt="John Dean smiling and standing outdoors"
+               class="responsive-photo">
+          <figcaption>John Dean, Owner of John 3:30 Consulting, LLC</figcaption>
+        </figure>
+
+        <p>
+          My name is <strong>John Dean</strong>, and I’ve been working in the technology field since 1986.
+          For more than 25 years, my focus has been on <strong>researching, testing, recommending,
+          implementing, and supporting Assistive Technology</strong> for individuals who face physical
+          or cognitive challenges when using computers, tablets, and smartphones. This work has never
+          been just a job for me — it’s a calling to help people stay connected, independent, and
+          confident in a world that increasingly depends on technology.
+        </p>
+
+        <p>
+          Over the years, I’ve had the privilege of supporting individuals with a wide range of needs,
+          including:
+        </p>
+
+        <ul>
+          <li>People who are blind or have low vision, using tools such as screen readers, screen magnifiers, Refreshable Braille displays, larger monitors, and customized display and accessibility settings.</li>
+          <li>Individuals with mobility challenges who benefit from ergonomic keyboards, specialized mice, and speech recognition software.</li>
+          <li>People with hearing differences who need help connecting hearing aids, cochlear implant processors, or Bluetooth accessories to their computers, tablets, smartphones, and televisions.</li>
+          <li>Clients whose hearing aids are too old to connect directly to their devices and who need alternative headset solutions — including over‑ear cushioned headsets, earbud‑style devices, and bone conduction options.</li>
+          <li>Individuals who are deaf and use sign language as their primary language, including support with interpreting solutions.</li>
+          <li>People with hearing challenges who rely on captioning tools.</li>
+          <li>Individuals who struggle to use their own voice and benefit from text‑to‑speech solutions.</li>
+          <li>People with cognitive or neurosensory challenges who use text‑to‑speech and speech‑to‑text tools to communicate and work more effectively.</li>
+        </ul>
+
+        <p>
+          My approach has always been simple: <strong>meet people where they are, listen carefully,
+          and recommend solutions that truly fit their needs</strong>. Technology should never be
+          overwhelming — it should empower.
+        </p>
+
+        <p>
+          On a personal note, I am a follower of Jesus Christ, a husband to my wonderful wife Brenda
+          (married since 1985), a father to five grown and married children, and a grandfather to ten
+          precious grandchildren. My faith and my family shape the way I serve others, reminding me
+          daily that every person has value, purpose, and dignity. <strong>God is good all the time…
+          and all the time, God is good.</strong>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> John 3:30 Consulting, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+</body>
+</html>
