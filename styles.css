@@ -57,7 +57,7 @@ body {
 
 .site-header {
   background-color: var(--color-accent);
-  color: #000000; /* black text for strong contrast */
+  color: #ffffff; /* white text for strong contrast */
 }
 
 .site-title {
@@ -80,7 +80,7 @@ body {
 }
 
 .site-nav a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
 }
@@ -236,10 +236,10 @@ textarea:focus-visible {
   --color-focus: #ffbf47;
 }
 :root.dark-mode .site-header {
-  color: #ffffff;
+  color: #000000;
 }
 :root.dark-mode .site-nav a {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Dark mode toggle button */
