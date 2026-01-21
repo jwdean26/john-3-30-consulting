@@ -53,31 +53,27 @@ body {
   padding: 1rem;
 }
 
-/* Header layout */
-.header-flex {
+/* Header layout: left group + right logo */
+.header-layout {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-/* Title + tagline block */
-.header-text {
+/* Keep all left-side elements stacked neatly */
+.header-left {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
-/* Logo styling */
-.site-logo {
-  display: inline-block;
-}
-
+/* Logo sizing */
 .logo-image {
-  height: 90px;   /* increase size here */
+  height: 120px;   /* adjust as needed */
   width: auto;
 }
-
 /* Header and navigation */
 
 .site-header {
