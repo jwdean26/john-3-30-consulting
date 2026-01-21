@@ -282,3 +282,15 @@ html.dark-mode .theme-toggle {
 html.dark-mode .theme-toggle:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
+
+/* Logo placement */
+.site-logo {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.logo-image {
+  height: 60px;        /* adjust as needed */
+  width: auto;
+  vertical-align: middle;
+}
