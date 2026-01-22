@@ -12,7 +12,10 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
-    <div class="container">
+  <div class="container header-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="header-left">
       <h1 class="site-title">John 3:30 Consulting, LLC</h1>
       <p class="site-tagline">Empowering people through accessible technology</p>
 
@@ -20,16 +23,26 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="about-owner.html" aria-current="page">About the Owner</a></li>
+          <li><a href="about-owner.html">About the Owner</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-toggle" aria-pressed="false">
-          <span class="theme-icon" aria-hidden="true">🌙</span>
-          <span class="theme-label">Toggle dark mode</span>
-        </button>
       </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="theme-label">Toggle dark mode</span>
+      </button>
     </div>
-  </header>
+
+    <!-- RIGHT SIDE -->
+    <a href="index.html" class="site-logo">
+      <img src="images/john330consultinglogo.png"
+           alt="John 3:30 Consulting logo"
+           class="logo-image">
+    </a>
+
+  </div>
+</header>
 
   <main id="main-content">
     <section class="section section-alt">
