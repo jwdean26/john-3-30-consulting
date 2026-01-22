@@ -232,7 +232,7 @@ textarea:focus-visible {
 /* Owner photo styling */
 
 .owner-photo {
-  max-width: 320px;
+  max-width: 360px;
   margin: 0 auto 2rem;
   text-align: center;
 }
@@ -246,7 +246,7 @@ textarea:focus-visible {
 
 .owner-photo figcaption {
   margin-top: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   color: #444;
 }
 
