@@ -232,7 +232,7 @@ textarea:focus-visible {
 /* Owner photo styling */
 
 .owner-photo {
-  max-width: 360px;
+  max-width: 340px;
   margin: 0 auto 2rem;
   text-align: center;
 }
