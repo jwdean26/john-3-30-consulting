@@ -290,7 +290,7 @@ html.dark-mode {
 }
 
 /* Resource links */
-.resource-link {
+.resource-link:a {
   font-size: 2.0rem;
   font-weight: 600;
 }
