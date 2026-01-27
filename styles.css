@@ -45,12 +45,6 @@ body {
   top: 0;
 }
 
-/* Resource links */
-.resource-link {
-  font-size: 2.0rem;
-  font-weight: 600;
-}
-
 /* Layout */
 
 .container {
@@ -293,6 +287,12 @@ html.dark-mode {
 .theme-icon {
   font-size: 1.2rem;
   line-height: 1;
+}
+
+/* Resource links */
+.resource-link {
+  font-size: 2.0rem;
+  font-weight: 600;
 }
 
 /* Dark mode overrides – must come AFTER base styles */
