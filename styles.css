@@ -53,6 +53,12 @@ body {
   padding: 1rem;
 }
 
+/* Resource links */
+.resource-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 /* Header layout: left group + right logo */
 .header-layout {
   display: flex;
