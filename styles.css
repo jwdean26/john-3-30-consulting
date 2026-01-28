@@ -78,13 +78,19 @@ body {
   width: auto;
 }
 
-.emoji-line {
-  height: 2rem;
+.section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
   margin: 2rem 0;
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><text x='0' y='15' font-size='16'>⭐</text></svg>");
-  background-repeat: repeat-x;
-  background-position: center;
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.divider-icon {
+  width: 28px;   /* small version of your logo */
+  height: auto;
+  flex-shrink: 0;
 }
 
 /* Header and navigation */
