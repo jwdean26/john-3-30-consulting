@@ -78,19 +78,13 @@ body {
   width: auto;
 }
 
-.section-divider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
+.logo-divider {
+  height: 40px;
   margin: 2rem 0;
-  opacity: 0.85;
-}
-
-.divider-icon {
-  width: 100px;   /* small version of your logo */
-  height: auto;
-  flex-shrink: 0;
+  background-image: url("images/john330consultinglogo.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 40px 40px;
 }
 
 /* Header and navigation */
