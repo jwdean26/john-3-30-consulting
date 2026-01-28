@@ -327,3 +327,6 @@ html.dark-mode .theme-toggle:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
+html.dark-mode .logo-divider {
+  background-image: url("images/CrossNoBackground.png");
+}
