@@ -79,12 +79,12 @@ body {
 }
 
 .logo-divider {
-  height: 50px;
+  height: 60px;
   margin: 2rem 0;
   background-image: url("images/CrossNoBackground.png");
   background-repeat: repeat-x;
   background-position: center;
-  background-size: 50px 50px;
+  background-size: 60px 60px;
 }
 
 /* Header and navigation */
