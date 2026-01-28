@@ -81,9 +81,12 @@ body {
 .logo-divider {
   height: 30px;
   margin: 2rem 0;
-  background-image: url("images/CrossNoBackground.png");
-  background-repeat: repeat-x;
-  background-position: center;
+  background: 
+    url("images/logo.png") repeat-x center;
+  -webkit-mask: 
+    linear-gradient(90deg, #000 0 30px, transparent 30px 60px) repeat-x;
+  mask: 
+    linear-gradient(90deg, #000 0 30px, transparent 30px 60px) repeat-x;
   background-size: 60px 30px;
 }
 
