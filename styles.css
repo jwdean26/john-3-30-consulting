@@ -88,7 +88,7 @@ body {
 }
 
 .divider-icon {
-  width: 15px;   /* small version of your logo */
+  width: 28px;   /* small version of your logo */
   height: auto;
   flex-shrink: 0;
 }
