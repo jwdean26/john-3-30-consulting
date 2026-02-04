@@ -79,7 +79,7 @@ body {
 }
 
 .logo-divider {
-  height: 100px;
+  height: 80px;
   margin: 2rem 0;
   background-image: url("images/John330LogoWhiteBackground.png");
   background-repeat: repeat-x;
@@ -328,7 +328,7 @@ html.dark-mode .theme-toggle:hover {
 }
 
 html.dark-mode .logo-divider {
-  height: 100px;
+  height: 80px;
   margin: 2rem 0;
   background-image: url("images/John330LogoNoBackground.png");
   background-repeat: repeat-x;
