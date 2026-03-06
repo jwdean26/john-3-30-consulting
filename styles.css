@@ -279,10 +279,10 @@ textarea:focus-visible {
 
 .logo-box {
   padding: 1rem;
-  border: 50px solid transparent;                 /* border thickness */
+  border: 45px solid transparent;                 /* border thickness */
   border-image-source: url("images/John330LogoWhiteBackgroundSmall.png");
-  border-image-slice: 15;                         /* slice LESS than full height */
-  border-image-width: 50px;                       /* matches border thickness */
+  border-image-slice: 10;                         /* slice LESS than full height */
+  border-image-width: 45px;                       /* matches border thickness */
   border-image-repeat: repeat;                    /* tile logos around the box */
   background: none;
 }
