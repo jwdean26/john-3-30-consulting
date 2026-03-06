@@ -281,8 +281,8 @@ textarea:focus-visible {
   padding: 1.5rem;
   border: 40px solid transparent;                 /* border thickness */
   border-image-source: url("images/John330LogoWhiteBackgroundSmall.png");
-  border-image-slice: 25;                         /* slice LESS than full height */
-  border-image-width: 25px;                       /* matches border thickness */
+  border-image-slice: 15;                         /* slice LESS than full height */
+  border-image-width: 15px;                       /* matches border thickness */
   border-image-repeat: repeat;                    /* tile logos around the box */
   background: none;
 }
