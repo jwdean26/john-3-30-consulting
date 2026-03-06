@@ -274,6 +274,20 @@ textarea:focus-visible {
 }
 
 /* =========================================================
+   LOGO BOX
+   ========================================================= */
+
+.logo-box {
+  padding: 1.5rem;
+  border: 40px solid transparent; /* space for the image border */
+  border-image-source: url("images/border.png");
+  border-image-slice: 40;         /* how deep to slice into the image */
+  border-image-repeat: repeat;    /* tile the pattern along edges */
+  border-image-width: 40px;       /* optional: matches border thickness */
+  border-image-outset: 0;         /* optional */
+}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 
