@@ -164,7 +164,7 @@ p {
    ========================================================= */
 
 .section {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .section-alt {
@@ -172,12 +172,12 @@ p {
 }
 
 .section h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 0;
 }
 
 .service-block {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .service-block h3 {
