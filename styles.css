@@ -60,7 +60,7 @@ p {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 /* Header layout: left group + right logo */
