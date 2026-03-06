@@ -280,12 +280,11 @@ textarea:focus-visible {
 .logo-box {
   padding: 1.5rem;
   border: 40px solid transparent; /* space for the image border */
-  border-image-source: url("images/John330LogoWhiteBackground.png");
+  border-image-source: url("images/John330LogoWhiteBackgroundSmall.png");
   border-image-slice: 20;         /* how deep to slice into the image */
   border-image-repeat: repeat;    /* tile the pattern along edges */
   border-image-width: 40px;       /* optional: matches border thickness */
-  border-image-height: 20px;
-   border-image-outset: 0;         /* optional */
+  border-image-outset: 0;         /* optional */
 }
 
 /* =========================================================
@@ -371,5 +370,5 @@ html.dark-mode .logo-divider {
 }
 
 html.dark-mode .logo-box {
-   background-image: url("images/John330LogoNoBackground.png");
+   background-image: url("images/John330LogoNoBackgroundSmall.png");
 }
