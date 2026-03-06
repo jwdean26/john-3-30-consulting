@@ -60,7 +60,7 @@ p {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0;
+  padding: 1rem 1rem;
 }
 
 /* Header layout: left group + right logo */
@@ -191,7 +191,7 @@ p {
 
 form {
   max-width: 600px;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
 }
 
 .form-group {
