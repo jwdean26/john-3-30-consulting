@@ -60,7 +60,7 @@ p {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 /* Header layout: left group + right logo */
@@ -172,7 +172,7 @@ p {
 }
 
 .section h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 0;
 }
 
