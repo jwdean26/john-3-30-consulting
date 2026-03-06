@@ -277,16 +277,11 @@ textarea:focus-visible {
    LOGO BOX
    ========================================================= */
 
-.logo-box {
-  padding: 1rem;
-  border: 50px solid transparent;                 /* border thickness */
-  border-image-source: url("images/John330LogoWhiteBackgroundSmall.png");
-  border-image-slice: 10;                         /* slice LESS than full height */
-  border-image-width: 45px;                       /* matches border thickness */
-  border-image-repeat: repeat;                    /* tile logos around the box */
-  background: none;
+.border-box {
+  padding: 1.5rem;
+  border: 2px solid black;
+  border-radius: 6px;   /* optional */
 }
-
 
 /* =========================================================
    FOOTER
@@ -370,6 +365,6 @@ html.dark-mode .logo-divider {
   background-image: url("images/John330LogoNoBackground.png");
 }
 
-html.dark-mode .logo-box {
-   border-image-source: url("images/John330LogoNoBackgroundSmall.png");
+html.dark-mode .border-box {
+   border: 2px solid white;
 }
