@@ -78,7 +78,7 @@ p {
 }
 
 .site-logo {
-  flex-shrink: 0;
+  flex-shrink: 3;
 }
 
 .logo-image {
