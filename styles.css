@@ -328,6 +328,57 @@ a:focus {
 }
 
 /* =========================================================
+   SERVICE RATES PAGE
+   ========================================================= */
+
+.services-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
+
+.services-page h1,
+.services-page h2,
+.services-page h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.service-block,
+.policy-block {
+  border: 1px solid var(--border-color, #ccc);
+  padding: 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  background-color: var(--surface-color, #fff);
+}
+
+.service-block h3,
+.policy-block h3 {
+  margin-top: 0;
+}
+
+.rate {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================================================
    DARK MODE OVERRIDES
    ========================================================= */
 
@@ -368,4 +419,14 @@ html.dark-mode .logo-divider {
 
 html.dark-mode .border-box {
    border: 2px solid white;
+}
+
+html.dark-mode .service-block,
+html.dark-mode .policy-block {
+  background-color: var(--surface-dark, #1e1e1e);
+  border-color: var(--border-dark, #444);
+}
+
+html.dark-mode .services-page {
+  color: var(--text-dark, #f2f2f2);
 }
