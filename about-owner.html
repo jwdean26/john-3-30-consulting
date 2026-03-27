@@ -121,7 +121,11 @@
         <p><strong>Servant/Owner:</strong> John Dean</p>
         <h3>Send a Message</h3>
 
-        <form id="contact-form" action="https://formspree.io/f/mwvwennb" method="post" novalidate>
+        <form action="https://api.staticforms.dev/submit" method="POST">
+        <!-- Required: API Key -->
+          <input type="hidden" name="apiKey" value="sf_149c946aa28d4a3248f5c95f" />
+        
+        <!-- <form id="contact-form" action="https://formspree.io/f/mwvwennb" method="post" novalidate> -->
           <input type="hidden" name="_subject" value="New message from John 3:30 Consulting website">
           <p id="form-instructions">
           All fields marked with <span aria-hidden="true">*</span> are required.
