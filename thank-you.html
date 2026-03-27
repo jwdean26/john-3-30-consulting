@@ -59,3 +59,59 @@
           I will review your message and respond shortly.
         </p>
 
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> John 3:30 Consulting, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+  
+  <script>
+  (function () {
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const icon = toggle.querySelector('.theme-icon');
+    const label = toggle.querySelector('.theme-label');
+
+    // Detect system preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Load saved preference OR fall back to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    // Apply initial theme
+    if (initialTheme === 'dark') {
+      root.classList.add('dark-mode');
+      toggle.setAttribute('aria-pressed', 'true');
+      icon.textContent = '🌞';
+      label.textContent = 'Switch to Light Mode';
+    } else {
+      label.textContent = 'Switch to Dark Mode';
+    }
+
+    // Toggle theme on click
+    toggle.addEventListener('click', function () {
+      const isDark = root.classList.toggle('dark-mode');
+      toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+      icon.textContent = isDark ? '🌞' : '🌙';
+      label.textContent = isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+    });
+  })();
+</script>
+</body>
+</html>
