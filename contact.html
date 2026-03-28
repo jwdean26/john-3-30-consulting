@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – John 3:30 Consulting, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact John 3:30 Consulting, LLC.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+  <div class="container header-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="header-left">
+      <h1 class="site-title">John 3:30 Consulting, LLC</h1>
+      <p class="site-tagline">Empowering people through assistive technology</p>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="service-rates.html">Service Rates</a></li>
+          <li><a href="about-owner.html">About the Owner</a></li>
+          <li><a href="about-owner.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="theme-label">Toggle dark mode</span>
+      </button>
+
+      <h2>Services available starting May 1, 2026</h2>
+      
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <a href="index.html" class="site-logo">
+      <img src="images/john330consultinglogo.png"
+           alt="John 3:30 Consulting logo"
+           class="logo-image">
+    </a>
+
+  </div>
+</header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container">
+        <h2><center>Contact</center></h2>
+        <p>
+      </div>
+    </section>
+ 
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Business name:</strong> John 3:30 Consulting, LLC</p>
+        <p><strong>Servant/Owner:</strong> John Dean</p>
+        <h3>Send a Message</h3>
+
+        <form action="https://api.staticforms.dev/submit" method="POST">
+        <!-- Required: API Key -->
+          <input type="hidden" name="apiKey" value="sf_149c946aa28d4a3248f5c95f" />
+          <!-- Redirect after successful submission -->
+          <input type="hidden" name="redirectTo" value="https://john330consulting.com/thank-you.html">
+          <input type="hidden" name="_subject" value="New message from John 3:30 Consulting website">
+          <p id="form-instructions">
+          All fields marked with <span aria-hidden="true">*</span> are required.
+          </p>
+
+        <div class="form-group">
+          <label for="name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject <span aria-hidden="true">*</span></label>
+          <input type="text" id="subject" name="subject" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+        </div>
+
+        <button type="submit" class="button-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> John 3:30 Consulting, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+  
+  <script>
+  (function () {
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const icon = toggle.querySelector('.theme-icon');
+    const label = toggle.querySelector('.theme-label');
+
+    // Detect system preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Load saved preference OR fall back to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    // Apply initial theme
+    if (initialTheme === 'dark') {
+      root.classList.add('dark-mode');
+      toggle.setAttribute('aria-pressed', 'true');
+      icon.textContent = '🌞';
+      label.textContent = 'Switch to Light Mode';
+    } else {
+      label.textContent = 'Switch to Dark Mode';
+    }
+
+    // Toggle theme on click
+    toggle.addEventListener('click', function () {
+      const isDark = root.classList.toggle('dark-mode');
+      toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+      icon.textContent = isDark ? '🌞' : '🌙';
+      label.textContent = isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+    });
+  })();
+</script>
+</body>
+</html>
