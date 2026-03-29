@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>John 3:30 Consulting, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="John 3:30 Consulting, LLC provides assistive technology consulting, training, and support for individuals with physical or cognitive challenges.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+  <div class="container header-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="header-left">
+      <h1 class="site-title">John 3:30 Consulting, LLC</h1>
+      <p class="site-tagline">Empowering people through assistive technology</p>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="service-rates.html">Service Rates</a></li>
+          <li><a href="about-owner.html">About the Owner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="theme-label">Toggle dark mode</span>
+      </button>
+
+      <h2>Services available starting May 1, 2026</h2>
+    
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <a href="index.html" class="site-logo">
+      <img src="images/john330consultinglogo.png"
+           alt="John 3:30 Consulting logo"
+           class="logo-image">
+    </a>
+
+  </div>
+  </header>
+  
+  <main id="main-content">
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+
+        <article class="service-block">
+          <h3>Accommodation Recommendations</h3>
+          <p>
+            Because each individual's needs and challenges are different, I will strive to understand your unique needs 
+            to provide personalized accommodation recommendations, including guidance to choose the right solutions for you.
+          </p>
+        </article>
+
+        <article class="service-block">
+          <h3>Accessibility Settings Assistance</h3>
+          <p>
+            Help adjusting accessibility settings on your devices running:
+          </p>
+          <ul>
+            <li>Windows</li>
+            <li>macOS</li>
+            <li>iPadOS</li>
+            <li>iOS</li>
+            <li>Android</li>
+          </ul>
+          <p>
+            Support for learning and using built‑in accessibility apps on PCs, tablets, and smartphones.  <br>Some examples include:
+          </p>
+          <ul>
+            <li>PCs (Windows &amp; Mac)</li>
+            <ul>
+              <li>Windows Voice Access or macOS Voice Control speech-to-text apps</li>
+              <li>Windows Magnifier or macOS Zoom magnification apps</li>
+              <li>Windows Narrator or macOS VoiceOver screen-reading apps</li>
+              <li>Windows Live Captions or macOS Live Captions apps</li>
+              <li>Adjusting display settings (size, colors, contrast), font sizes, mouse cursor, keyboard access, etc.</li>
+            </ul>
+            <li>Tablets (Android &amp; iPad)</li>
+            <ul></ul>
+            <li>Smartphones (Android &amp; iPhone)</li>
+            <ul></ul>
+          </ul>
+        </article>
+
+        <article class="service-block">
+          <h3>Assistive Technology Setup &amp; Training</h3>
+          <p>
+            Installation and configuration of assistive technology applications, along with patient, practical
+            training to help you feel more comfortable and confident when using your PC, tablet, or smartphone.
+          </p>
+        </article>
+
+        <article class="service-block">
+          <h3>Ergonomic/Hardware Recommendations</h3>
+          <p>
+            Assistance in selecting the most appropriate keyboard, mouse, headset, monitor, etc., to meet your needs.  This includes 
+            guiding you in connecting these devices to your PC, tablet, and smartphone and configuring them for your use.  Also, 
+            for those with hearing aids, I will provide guidance on how to connect your hearing aids to your PC, tablet, and 
+            smartphone, or choose the right headset to work with your hearing aids for the best comfort, clarity, and accessibility.
+          </p>
+        </article>
+
+        <article class="service-block">
+          <h3>Virtual/Remote Support</h3>
+          <p>
+            Remote support for hardware, software, and your device's built-in accessibility apps to provide the help you need wherever 
+            you are located.  This will be accomplished using remote control software, which may require you to install an app on your
+            device to allow me to connect to it remotely.<br><br>
+            <strong>*** NOTE: I will never be able to access your device(s) without you allowing me to connect. ***</strong>
+          </p><br>
+          <h3>
+            <a href="anyviewer-instructions.html" target="_blank">Instructions to download and install Anyviewer so I can remotely connect to your device.</a>
+          </h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> John 3:30 Consulting, LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple, non-essential enhancement: keeps year current
+    (function () {
+      var yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+
+<script>
+  (function () {
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const icon = toggle.querySelector('.theme-icon');
+    const label = toggle.querySelector('.theme-label');
+
+    // Detect system preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Load saved preference OR fall back to system preference
+    const savedTheme = localStorage.getItem('theme');
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    // Apply initial theme
+    if (initialTheme === 'dark') {
+      root.classList.add('dark-mode');
+      toggle.setAttribute('aria-pressed', 'true');
+      icon.textContent = '🌞';
+      label.textContent = 'Switch to Light Mode';
+    } else {
+      label.textContent = 'Switch to Dark Mode';
+    }
+
+    // Toggle theme on click
+    toggle.addEventListener('click', function () {
+      const isDark = root.classList.toggle('dark-mode');
+      toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+      icon.textContent = isDark ? '🌞' : '🌙';
+      label.textContent = isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+    });
+  })();
+</script>
+</body>
+</html>
