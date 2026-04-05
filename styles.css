@@ -332,7 +332,7 @@ a:focus {
    ========================================================= */
 
 .services-page {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 2rem 1rem;
   line-height: 1.6;
